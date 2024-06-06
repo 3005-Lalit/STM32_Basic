@@ -33,7 +33,7 @@ int main(void)
 
 	*pISPR1|=(1<<(USART3_IRQNO % 32));
 
-	// ennable the USART3 IRQ number in NVIC
+	// enable the USART3 IRQ number in NVIC
 	uint32_t *pISER1= (uint32_t*)0XE000E104;
 
 		*pISER1|=(1<<(USART3_IRQNO % 32));
